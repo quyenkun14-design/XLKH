@@ -50,7 +50,7 @@ if not st.session_state.logged_in:
         
         with st.form("login_form"):
             input_user = st.text_input("Tên tài khoản (Email / Username)")
-            input_pass = st.text_input("Mật khẩu", type="password")
+            input_pass = st.text_input("Mật khẩu", type="password", autocomplete="new-password")
             submit_btn = st.form_submit_button("Đăng nhập", use_container_width=True)
             
             if submit_btn:
