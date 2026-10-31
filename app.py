@@ -65,8 +65,7 @@ if not st.session_state.logged_in:
         
         # Gợi ý nhỏ cho user biết quy luật nếu cần
         with st.expander("ℹ️ Hỗ trợ đăng nhập"):
-            st.caption("• **Tài khoản Admin**: Do bạn tự quản lý.")
-            st.caption(f"• **Tài khoản User (`PKHWP@gmail.com`)**: Mật khẩu thay đổi tự động vào ngày 01 hằng tháng (Tháng này là: `{get_dynamic_user_password()}`).")
+            st.caption(f"• **Tài khoản User (`PKHWP@gmail.com`)**: Mật khẩu thay đổi tự động vào ngày 01 hằng tháng .")
 
 else:
     # --- GIAO DIỆN KHI ĐÃ ĐĂNG NHẬP THÀNH CÔNG ---
