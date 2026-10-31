@@ -1,14 +1,7 @@
 import re
 from datetime import datetime, timedelta
 import openpyxl
-from tkinter import filedialog
 
-def chon_file_excel():
-    file_path = filedialog.askopenfilename(
-        title="Chọn file Excel kế hoạch sản xuất",
-        filetypes=[("Excel files", "*.xlsx *.xls")]
-    )
-    return file_path
 
 def lay_danh_sach_sheet(file_path):
     try:
